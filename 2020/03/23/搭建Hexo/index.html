@@ -20,15 +20,27 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="云州的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="hexo常用命令   命令 功能    hexo new “title” 新建文章(md文件)，title为文章的标题   hexo new page “pagename” 新建网页，pagename为网页的名称   hexo clean 清除部署的緩存   hexo n &#x3D;&#x3D; hexo new 新建一篇文章   hexo g &#x3D;&#x3D; hexo generate 生成静态页面   hexo s &#x3D;&#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建Hexo">
+<meta property="og:url" content="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/index.html">
 <meta property="og:site_name" content="云州的博客">
+<meta property="og:description" content="hexo常用命令   命令 功能    hexo new “title” 新建文章(md文件)，title为文章的标题   hexo new page “pagename” 新建网页，pagename为网页的名称   hexo clean 清除部署的緩存   hexo n &#x3D;&#x3D; hexo new 新建一篇文章   hexo g &#x3D;&#x3D; hexo generate 生成静态页面   hexo s &#x3D;&#x3D;">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/node_npm.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/cnpm.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/hexo.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/hexo_init_error.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/hexo_s.png">
+<meta property="article:published_time" content="2020-03-23T02:45:45.000Z">
+<meta property="article:modified_time" content="2020-03-23T04:08:10.264Z">
 <meta property="article:author" content="yunzhou">
+<meta property="article:tag" content="分享">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/node_npm.png">
 
-<link rel="canonical" href="http://yoursite.com/archives/">
+<link rel="canonical" href="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/">
 
 
 <script id="page-configurations">
@@ -36,12 +48,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 云州的博客</title>
+  <title>搭建Hexo | 云州的博客</title>
   
 
 
@@ -193,93 +205,188 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/23/%E6%90%AD%E5%BB%BAHexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="yunzhou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云州的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          搭建Hexo
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-23 10:45:45 / 修改时间：12:08:10" itemprop="dateCreated datePublished" datetime="2020-03-23T10:45:45+08:00">2020-03-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a>
+                </span>
+            </span>
+
+          
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
+        <h3 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>hexo new “title”</td>
+<td>新建文章(md文件)，title为文章的标题</td>
+</tr>
+<tr>
+<td>hexo new page “pagename”</td>
+<td>新建网页，pagename为网页的名称</td>
+</tr>
+<tr>
+<td>hexo clean</td>
+<td>清除部署的緩存</td>
+</tr>
+<tr>
+<td>hexo n == hexo new</td>
+<td>新建一篇文章</td>
+</tr>
+<tr>
+<td>hexo g == hexo generate</td>
+<td>生成静态页面</td>
+</tr>
+<tr>
+<td>hexo s == hexo server</td>
+<td>启动hexo</td>
+</tr>
+<tr>
+<td>hexo d == hexo deploy</td>
+<td>将网站部署到GitHub</td>
+</tr>
+<tr>
+<td>hexo g -d</td>
+<td>生成页面并部署到GitHub</td>
+</tr>
+<tr>
+<td>hexo g -s</td>
+<td>生成页面并本地部署进行预览</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-23T10:45:45+08:00"
-              content="2020-03-23">
-          03-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/" itemprop="url">
-            <span itemprop="name">搭建Hexo</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-21T10:49:53+08:00"
-              content="2020-03-21">
-          03-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/03/21/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-21T10:40:52+08:00"
-              content="2020-03-21">
-          03-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/03/21/first-blog/" itemprop="url">
-            <span itemprop="name">first blog</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>首先安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>，安装完成后既可使用windows的cmd，也可以使用git安装过程中的 git-bash进行操作</p>
+<h4 id="查看node版本和npm包版本"><a href="#查看node版本和npm包版本" class="headerlink" title="查看node版本和npm包版本"></a>查看node版本和npm包版本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/node_npm.png" alt="node_npm-v"></p>
+<h4 id="使用淘宝镜像下载cnpm"><a href="#使用淘宝镜像下载cnpm" class="headerlink" title="使用淘宝镜像下载cnpm"></a>使用淘宝镜像下载cnpm</h4><p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
+<h4 id="下载完后查看cnpm版本"><a href="#下载完后查看cnpm版本" class="headerlink" title="下载完后查看cnpm版本"></a>下载完后查看cnpm版本</h4><p><code>cnpm -v</code><br><img src="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/cnpm.png" alt="cnpm"></p>
+<h4 id="使用cnpm下载hexo-用hexo-v查看hexo的版本"><a href="#使用cnpm下载hexo-用hexo-v查看hexo的版本" class="headerlink" title="使用cnpm下载hexo,用hexo -v查看hexo的版本"></a>使用cnpm下载hexo,用hexo -v查看hexo的版本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/hexo.png" alt="hexo"></p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><h4 id="新建一个空文件夹并进入初始化hexo，也可初始化时指定文件夹"><a href="#新建一个空文件夹并进入初始化hexo，也可初始化时指定文件夹" class="headerlink" title="新建一个空文件夹并进入初始化hexo，也可初始化时指定文件夹"></a>新建一个空文件夹并进入初始化hexo，也可初始化时指定文件夹</h4><p><code>hexo init d:/blog</code></p>
+<h3 id="hexo-init运行出错"><a href="#hexo-init运行出错" class="headerlink" title="hexo init运行出错"></a>hexo init运行出错</h3><p>输入 hexo init出现下面内容<br><img src="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/hexo_init_error.png" alt="hexo_init_error"></p>
+<p>这里你如果安装了淘宝镜像直接输入 cnpm install就解决了<br>之后输入 hexo s可以正常运行<br><img src="/2020/03/23/%E6%90%AD%E5%BB%BAHexo/hexo_s.png" alt="hexo_s.png"></p>
+<blockquote>
+<p>本文引用至：<a href="https://www.cnblogs.com/luqwer/p/11219626.html" target="_blank" rel="noopener">https://www.cnblogs.com/luqwer/p/11219626.html</a></p>
+</blockquote>
 
     </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="yunzhou 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="yunzhou 支付宝">
+        <p>支付宝</p>
+      </div>
+
   </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E4%BA%AB/" rel="tag"># 分享</a>
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/21/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
   
   
 
-  
-
+  </div>
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -326,6 +433,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo常用命令"><span class="nav-number">1.</span> <span class="nav-text">hexo常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查看node版本和npm包版本"><span class="nav-number">2.1.</span> <span class="nav-text">查看node版本和npm包版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用淘宝镜像下载cnpm"><span class="nav-number">2.2.</span> <span class="nav-text">使用淘宝镜像下载cnpm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下载完后查看cnpm版本"><span class="nav-number">2.3.</span> <span class="nav-text">下载完后查看cnpm版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用cnpm下载hexo-用hexo-v查看hexo的版本"><span class="nav-number">2.4.</span> <span class="nav-text">使用cnpm下载hexo,用hexo -v查看hexo的版本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">3.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建一个空文件夹并进入初始化hexo，也可初始化时指定文件夹"><span class="nav-number">3.1.</span> <span class="nav-text">新建一个空文件夹并进入初始化hexo，也可初始化时指定文件夹</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-init运行出错"><span class="nav-number">4.</span> <span class="nav-text">hexo init运行出错</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
